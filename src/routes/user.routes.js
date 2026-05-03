@@ -36,7 +36,7 @@ router.route("/login").post(loginUser);
 router.route("/logout").post(jwtVerify, logoutUser);
 router.route("/refresh-token").post(refreshAccessToken);
 router.route("/change-password").post(jwtVerify, changeCurrentPassword);
-router.route("/current-user".get(jwtVerify, getcurrentUser));
+router.route("/current-user").get(jwtVerify, getcurrentUser);
 router.route("/update-account").patch(jwtVerify, updateAccount);
 
 router
